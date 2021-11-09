@@ -1,0 +1,37 @@
+{
+    "id": "12c05375-6e4f-4d59-d7c3-bfef63f4527a",
+    "author": "",
+    "widgets": [
+        {
+            "id": "Building_Dashboard",
+            "name": "Building_Dashboard",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+    ],
+    "sidebarLinks": [
+        {
+            "id": "Building_DashboardLink",
+            "label": "",
+            "description": "",
+            "target": "",
+            "icon": "",
+            "roles":[]
+        }
+    ],
+    "uis": [
+        {
+            "id": "Building_DashboardLink",
+            "label":"",
+            "description": "",
+            "roles": []
+        }
+    ],
+    "menuItems": [
+        {
+            "id": "Building_DashboardLink",
+            "title": "Building_Dashboard"
+        }
+    ]
+}

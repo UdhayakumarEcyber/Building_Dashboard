@@ -1,0 +1,403 @@
+
+
+.rht-title-section {
+    float: right;
+    display: flex;
+    .uxp-form-select{
+        min-width: 182px;
+    } 
+
+      .uxp-form-select:first-child {
+        margin-right: 1em;
+    } 
+        
+    .uxp-select-placeholder.dynamic-select {
+        background: #dcdcdc;
+    }
+    .uxp-select-placeholder.valid:before{
+        filter: none;
+    }
+    .uxp-select-placeholder.valid .selected {
+        color: #626262;
+    }
+    
+    p.guage-days{
+        display: inline-block;
+        padding: 10px 15px 10px 30px;
+        margin: 0;
+        background: #dcdcdc;
+        border-radius: 8px;
+        position: relative;
+
+        &:before{
+            content: '';
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAjBJREFUaEPtmc9KHEEQxn8rQRGD4Dn4BgY9iPHPC0TRFzAg4kEPkryLIh5ED4q+QaJPIP4DEfQJRHPNwRBQiErJDLTtTHfX9qzLQO9pl676ur6vqnqnaxrU/NOoefwkAu3OYMpAHTPQBSwBs8BARuAK2AM2gHsPqVj/V/DaEvoE/AIGS4K8AKaB25L1WP83sBoCotyJI/gcXEiMFmQi1r9QEw2BH8BKYM1/B9Ys21j/aAKi/oiBIqUkvSAiSO1PGmvHwJi1Y6x/NIE74KOB0g/cZL/l+7WxJra91o6x/k0T6AC+ATsWgl1+T4HllZv5/Oeyk+3RhevrgT5gP2tKG8cXgI9PiL+U4hTwpwzMReADcGjVvYkTEoBGvLIMSu9MAP+LwFwEFoAtRwTvRUBCmAe2tQTOgGEHAVcT+8pH1jX+p8AXLYF/QLcjkgNg0ThGv4ZEbdho/CWWHi0B7amijF9tXljurh5IBNQaux1SBioWVA2XMuB77FBL6nGwD5HoDCQCyhSlDAQpoFRVYx60v+afOPWARn4gZSBIAaWqGvOg/VMPaCRV2qYMuAZRSjHV5iGDshdQVw/ITMa8SOd32Hwap44q0EGCl1Glecc+Asa1d2IZ0K4Gbtpqs2VgXUtAxuGShaFWR+fBP88GxQ9aAmIvLyR+tpGEBD8D/C4jGfJ805nNf+SV0mdrQt2K5PwFLoFdYBMoVD7fOIRAK4KsDDMRqEzKJoFSBpoUrjK32mfgGcS2ezHNhZGHAAAAAElFTkSuQmCC");
+            width: 15px;
+            height: 15px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 10px;
+            top: 8px;
+        }
+    }
+}
+
+
+.map-widget-box{
+    display: inline-block;
+    width: 100%;
+  
+
+    .box-widget{ 
+ 
+        border-radius: 15px;
+        padding: 10px 20px;
+        margin: 1em 3%;
+        color: #424242;
+        display: inline-block;
+        width: 45%;
+
+        &.electricity{
+            background: #fbf9f4;
+        }
+
+        &.orders{
+            background: #f3fef9;
+        }
+
+        &.issues{
+            background: #f3fef9;
+        }
+
+        &.hotspots{
+            background: #e8f0fa;
+        }
+
+        &:nth-child(2n){
+            margin: 1em 3% 1em 0%; 
+        }
+
+        .utility-top{
+            display: inline-block;
+            width: 100%;
+
+            p{
+                display: inline-block; 
+                text-transform: capitalize;
+                font-size: 1.2em;
+            } 
+            .energy-value{ 
+                float: right; 
+
+                span{
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-top: 10px;
+                }
+                .arrow{
+                    display: inline-block;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px 0px 0px 5px; 
+
+                    &.down-arrow{ 
+                        background-image: url(https://static.iviva.com/images/uxp-generic-widgets/up-red-aarow.svg);
+                    }
+                }
+
+            }
+        }
+            .energy-sec{
+                display: inline-block;
+                width: 100%;
+                margin: 2.5em 0em;
+                text-align: center;
+
+                .energy-icon{
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+
+                    img{
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                h5{
+                    font-size: 2.2em;
+                    font-weight: bolder;
+                    padding: 17px 0 0 10px;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+            }
+
+            .utility-bot{
+                display: inline-block;
+                width: 100%;
+                
+                .utility-bot-lft{
+                    display: inline-flex;
+                    width: 70px;
+
+                    .speed_meter-icon{
+                        display: inline-block;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(https://static.iviva.com/images/uxp-generic-widgets/speedo-meter.svg);
+                    }
+                    span{
+                        font-size: 0.8em;
+                        display: inline-block;
+                        margin-top: 4px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .compare-sec{
+                    float: right;
+                    width: 85px;
+                    background: #e2e2de;
+                    border-radius: 20px;
+                    padding: 5px 10px;
+                    position: relative;
+
+                    p{
+                        display: inline-block;
+                        font-size: 0.7em;
+                        padding: 5px 0;
+                        margin: 0;
+                    }
+
+                    .compare-icon{
+                        display: inline-block;
+                        width: 22px;
+                        height: 22px;
+                        position: absolute;
+                        background: #fff;
+                        border-radius: 50%;
+                        right: 4px;
+                        top: 3px;
+                          
+                         &:before{ 
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            margin: 0px;
+                            background-image: url(https://static.iviva.com/images/uxp-generic-widgets/compare-icon.svg);
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 13px;
+                            height: 15px;
+                            transform: translate(30%, 30%);
+                         }
+                    }
+                  
+                }
+            }
+        }
+     
+}
+
+
+
+.utility-widget{
+    display: inline-block;
+    width: 100%;
+
+    .dashboard_table{
+        
+        width: 100%;
+        // border: 1px solid #00f;
+
+        .dashboard_table-header {
+            
+            width: 100%;
+            ul{
+                width: 100%;
+                display: flex;
+                margin: 0;
+                padding: 0 2%;
+
+                li{ 
+                    border-top: 1px solid #bababa;
+                    border-bottom: 1px solid #bababa;
+                    padding: 16px 10px;
+                    font-size: 1em;
+                    list-style: none;
+                    width: 25%;
+                }
+            }
+        }
+
+        .dashboard_table-body {
+            
+            width: 100%;
+            overflow: auto;
+
+            ul{
+                width: 100%;
+                display: flex;
+                margin: 0;
+                padding: 0 2%;
+
+                li{
+                    border-bottom: 1px solid #bababa;
+                    padding: 5px 10px;
+                    list-style: none;
+                    width: 25%;
+
+                    .energy-icon{
+                        display: inline-block;
+                        width: 34%;
+                        height: auto;
+                        img{
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    p{
+                        display: inline-block;
+                        vertical-align: top;
+                        padding-left: 5px;
+                        font-size: 0.95em;
+                        width: 65%;
+                        padding-top: 5px;
+                        padding-bottom: 0;
+                    }
+
+                    .consumption, .benchmark, .deviation{
+
+                        p{
+                            display: inline-block;
+                            padding-left: 0px;
+                            width: 100%;
+                            margin: 5px 0 5px 0;
+                            padding-top: 0;
+
+                            em{
+                                display: inline-block;
+                                font-size: 8px;
+                                vertical-align: top;
+                            } 
+
+                            
+                            
+
+                        &.benchmark-count{
+                            background-color: #bdf3fd;
+                            padding: 10px 20px;
+                            border-radius: 20px;
+                            width: auto;
+                        }
+
+                        } 
+                      
+                    }
+
+                    .deviation{
+
+                        .arrow-icon{ 
+                            display: inline-block;
+                            width: 20%;
+                            height: auto;
+                            margin-right: 5%;
+                            margin-top: 1em;
+
+                            img{
+                                max-width: 100%;
+                                max-height: 100%;
+                                width: 100%;
+                                height: 100%;
+                            }
+                       }
+
+                       .deviation-para{ 
+                            width: 60%;
+                            display: inline-block;
+
+                            // p{
+                            //     padding: 0;
+                            //     margin: 0;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+.guage-overall{
+    // display: flex;
+    // width: 80%;
+    // margin: 0 10%;
+
+    display: flex;
+    width: 100%;
+    margin: 0 0%;
+
+    .radial-gauge{
+        // display: inline-block;
+        // width: 33%;
+        // height: 100%;
+
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+
+        &.mid-radial-gauge{
+            margin: 0 5%;
+        }
+
+        .gauge-cont-spacer{
+            display: none;
+        }
+
+        .gauge-label-cont{
+
+            .label{
+                display: inline-block;
+                position: absolute;
+                bottom: -2em;
+
+                h6{
+                    display: inline-block;
+                    font-size: 1.4em;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+                p{
+                    display: inline-block;
+                    width: 100%;
+                    padding: 0;
+                    margin: 10px 0px 10px 0px;
+                    font-size: 1em;
+                }
+            }
+        } 
+    }
+}
+ 
