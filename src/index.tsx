@@ -412,7 +412,7 @@ export const GaugeWidget: React.FunctionComponent<IGaugeWidgetProps> = (props) =
                     min={0}
                     max={40}
                     label={() => <> 
-                        <h6>Temprature</h6>
+                        <h6>Temperature</h6>
                         <p>24.1 &deg; C</p> 
                     </>}
                     legend={false}
