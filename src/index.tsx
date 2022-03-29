@@ -28,8 +28,8 @@ const Building_DashboardWidget: React.FunctionComponent<IWidgetProps> = (props) 
     {
         id: 'a',
         energy: 'electricity', 
-        perc_value : "10",
-        kilowatt : "0",
+        perc_value : "08",
+        kilowatt : "150",
         kilowatt_value : "kWh",
         icon : "https://static.iviva.com/images/uxp-generic-widgets/electricity.png",
         speed_meter_count : '09'
@@ -37,8 +37,8 @@ const Building_DashboardWidget: React.FunctionComponent<IWidgetProps> = (props) 
     {
         id: 'b',  
         energy: 'orders', 
-        perc_value : "10",
-        kilowatt : "0",
+        perc_value : "12",
+        kilowatt : "120",
         kilowatt_value : "kWh",
         icon : "https://static.iviva.com/images/uxp-generic-widgets/gas-icon.svg",
         speed_meter_count : '09'
@@ -46,8 +46,8 @@ const Building_DashboardWidget: React.FunctionComponent<IWidgetProps> = (props) 
     {
         id: 'c', 
         energy: 'issues', 
-        perc_value : "10",
-        kilowatt : "0",
+        perc_value : "15",
+        kilowatt : "10",
         kilowatt_value : "m3",
         icon : "https://static.iviva.com/images/uxp-generic-widgets/water-icon.svg",
         speed_meter_count : '09'
@@ -55,8 +55,8 @@ const Building_DashboardWidget: React.FunctionComponent<IWidgetProps> = (props) 
     {
         id: 'd', 
         energy: 'hotspots', 
-        perc_value : "10",
-        kilowatt : "0",
+        perc_value : "18",
+        kilowatt : "20",
         kilowatt_value : "MWh",
         icon : "https://static.iviva.com/images/uxp-generic-widgets/chillde-water-icon.svg",
         speed_meter_count : '09'
